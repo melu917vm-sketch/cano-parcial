@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600&family=Lora:wght@400;500&display=swap');
+
+body {
+  background-color: #101010;
+  color: #d6c477;
+  margin: 0;
+  padding: 35px 20px;
+  text-align: center;
+}
+
+main {
+  max-width: 700px;
+  margin: auto;
+}
+
+h1 {
+  font-family: 'Cinzel', serif;
+  font-size: clamp(1.8rem, 5vw, 3rem);
+  color: #e0ca82;
+}
+
+h2 {
+  font-family: 'Cinzel', serif;
+  font-size: clamp(1.2rem, 3vw, 1.7rem);
+}
+
+p {
+  font-family: 'Lora', serif;
+  font-size: clamp(1rem, 2.5vw, 1.2rem);
+  line-height: 1.8;
+  color: #c9bd91;
+}
+
+
+img {
+  width: 180%;
+   max-width: 350px;
+  height: auto;
+  display: block;
+  margin: 20px auto;
+  border-radius: 6px;
+}
+
+
+a {
+  display: inline-block;
+  margin: 8px;
+  padding: 12px 18px;
+  border: 1px solid #8f7a42;
+  border-radius: 4px;
+  color: #dfcb86;
+  text-decoration: none;
+  font-family: 'Lora', serif;
+  font-size: clamp(0.9rem, 2vw, 1.05rem);
+}
+
+a:hover {
+  background-color: #302b1e;
+  color: #fff0b0;
+}
+
+footer {
+  margin-top: 35px;
+  font-size: 0.85rem;
+}
+
+
+img {
+  width: 200%;
+  max-width: 400px;
+  height: auto;
+  display: block;
+  margin: 15px auto;
+}
+
+.reproductor {
+  width: 100%;
+  max-width: 350px;
+  margin: 20px auto;
+}
+
+.reproductor iframe {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  height: auto;
+  border: 1px solid #8f7a42;
+  border-radius: 6px;
+}
+
+
+.instagram-dropdown {
+  text-align: center;
+  margin: 25px auto;
+  font-family: 'Lora', serif;
+}
+
+.instagram-dropdown summary {
+  display: inline-block;
+  cursor: pointer;
+  list-style: none;
+  padding: 12px 22px;
+  color: #dfcb86;
+  background: #101010;
+  border: 1px solid #8f7a42;
+  border-radius: 25px;
+  transition: 0.4s;
+}
+
+.instagram-dropdown summary::-webkit-details-marker {
+  display: none;
+}
+
+.instagram-dropdown summary:hover {
+  background: #302b1e;
+  transform: scale(1.05);
+}
+
+.instagram-contenido {
+  max-width: 230px;
+  margin: 12px auto;
+  padding: 15px;
+  border: 1px solid #665832;
+  border-radius: 10px;
+  background: #191919;
+  animation: aparecer 0.45s ease;
+}
+
+.instagram-contenido p {
+  font-size: 14px;
+  color: #c9bd91;
+}
+
+.instagram-contenido a {
+  display: inline-block;
+  color: #dfcb86;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.instagram-contenido a:hover {
+  color: #fff0b0;
+  transform: translateY(-2px);
+}
+
+@keyframes aparecer {
+  from {
+    opacity: 0;
+    transform: translateY(-12px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
